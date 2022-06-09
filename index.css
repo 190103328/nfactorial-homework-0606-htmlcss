@@ -1,0 +1,131 @@
+body {
+  margin: 20px 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+/*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+.wrapper {
+  display: flex;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+/*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+.redExample {
+  flex: 1;
+  background-color: red;
+}
+
+/*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+.blueExample {
+  flex: 1;
+  background-color: blue;
+}
+
+/*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+.emptyExample2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+}
+
+.blueExample2 {
+  width: 80px;
+  background-color: blue;
+}
+
+.row3red {
+  width: 80px;
+  background-color: red;
+}
+.row3green {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.row3blue {
+  width: 80px;
+  background-color: blue;
+}
+.row4red {
+  flex: 1;
+  background-color: red;
+}
+.row4blue {
+  background-color: blue;
+  flex: 0.059;
+}
+
+.row5green {
+  margin: auto;
+}
+.row5red {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+.row6red {
+  flex: 1;
+  background-color: red;
+}
+
+.row6blue {
+  background-color: blue;
+  margin: auto;
+  width: 100px;
+  height: 60px;
+}
+.row7{
+  display: flex;
+    width: 100%;
+}
+.row7red {
+  background-color: red;
+  width: 80px;
+}
+
+.row7blue {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row7blue1 {
+  background-color: blue;
+  height: 20px;
+  width: 100%;
+}
+.row8green {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row8y {
+  width: 5%;
+  background-color: orange;
+}
+
+.row9green {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row9yellow {
+  width: 18%;
+  background-color: orange;
+}
+
+@media screen and (max-width: 600px) {
+  .row8y {
+    width: 18%;
+  }
+}
